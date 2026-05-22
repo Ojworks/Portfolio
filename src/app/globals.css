@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-border-custom: var(--border);
+  --color-card-custom: var(--card-bg);
+}
+
+:root {
+  --background: #fafaf9; /* Warm editorial stone-50 light background */
+  --foreground: #1c1917; /* stone-900 */
+  --muted: #78716c; /* stone-500 */
+  --muted-light: #e7e5e4; /* stone-200 */
+  --accent: #1c1917; /* High contrast dark gray/black as default accent in light mode */
+  --accent-secondary: #2563eb; /* Soft structural blue */
+  --border: #e7e5e4; /* stone-200 */
+  --card-bg: transparent; /* Flat transparent cards */
+  --scroll-thumb: #d6d3d1; /* stone-300 */
+}
+
+.dark {
+  --background: #0c0a09; /* stone-950 dark background */
+  --foreground: #f5f5f4; /* stone-100 */
+  --muted: #a8a29e; /* stone-400 */
+  --muted-light: #1c1917; /* stone-900 */
+  --accent: #f5f5f4; /* High contrast light gray/white as default accent in dark mode */
+  --accent-secondary: #3b82f6; /* Soft blue */
+  --border: #292524; /* stone-800 for subtle borders */
+  --card-bg: transparent; /* Flat transparent cards */
+  --scroll-thumb: #292524; /* stone-800 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Smooth layout transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Bento card styling */
+.bento-card {
+  border: 1px solid var(--border);
+  background-color: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.bento-card:hover {
+  border-color: var(--foreground);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Timeline vertical line custom accent */
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  bottom: -2rem; /* Matches gap/spacing of timeline items */
+  width: 1px;
+  background-color: var(--border);
+  transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-dot::after {
+  display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

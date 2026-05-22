@@ -1,0 +1,94 @@
+"use client";
+
+import { Laptop, Cpu, Brain, Wrench } from "lucide-react";
+
+export function AboutCard() {
+  return (
+    <div className="bento-card flex flex-col justify-between h-full">
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+          <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
+            About
+          </h2>
+        </div>
+        <div className="space-y-3.5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-sans">
+          <p className="font-medium text-stone-900 dark:text-stone-100">
+            I am a Software Developer and Chief Operating Officer specializing in building cross-platform web and mobile applications using React, React Native, and Flutter. Always eager for growth and continuous learning, I focus on mastering modern workflows and expanding my technical expertise.
+          </p>
+          <p>
+            As COO at SWUdevs, I coordinate operations and technical workflows for a community of over 150 members, designing curriculum-based workshops focused on university courses, hackathon prep, and developer tools. I manage outreach to bridge the gap between academic theory and real-world production.
+          </p>
+          <p className="border-l border-stone-300 dark:border-stone-700 pl-3 italic text-stone-500 dark:text-stone-400">
+            {"Lately, I've been diving into the practical applications of artificial intelligence, exploring how to build intelligent features directly into web and mobile platforms. My focus is on making apps smarter and more efficient, whether by integrating large language models to streamline workflows or building more interactive user experiences."}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const TECH_CATEGORIES = [
+  {
+    name: "Frontend & Mobile",
+    icon: Laptop,
+    skills: ["React.js", "TypeScript", "React Native", "Flutter", "Dart", "Tailwind CSS"],
+  },
+  {
+    name: "Backend & Serverless",
+    icon: Cpu,
+    skills: ["Node.js", "Firebase", "Supabase", "REST APIs", "Cloudflare Workers", "WebAssembly"],
+  },
+  {
+    name: "AI & Emerging Tech",
+    icon: Brain,
+    skills: ["Generative AI", "RAG Pipelines", "LLM Integration"],
+  },
+  {
+    name: "Developer Tools",
+    icon: Wrench,
+    skills: ["Git/GitHub", "VS Code", "Expo"],
+  },
+];
+
+export function TechStackCard() {
+  return (
+    <div className="bento-card flex flex-col justify-between h-full">
+      <div>
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+            <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
+              Tech Stack
+            </h2>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          {TECH_CATEGORIES.map((cat, idx) => {
+            const Icon = cat.icon;
+            return (
+              <div key={idx} className="space-y-1.5">
+                <h3 className="text-[11px] font-semibold text-stone-400 dark:text-stone-500 uppercase tracking-wider flex items-center gap-1.5">
+                  <Icon className="h-3.5 w-3.5" />
+                  {cat.name}
+                </h3>
+                <div className="flex flex-wrap gap-1">
+                  {cat.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2 py-0.5 text-xs rounded bg-transparent border border-stone-200 dark:border-stone-800 text-stone-700 dark:text-stone-300 font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
