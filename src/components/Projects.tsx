@@ -20,7 +20,7 @@ const PROJECTS: Project[] = [
     description:
       "A cross-platform mobile application designed for medical and academic students to track duty sessions, clinical rotations, and attendance hours efficiently.",
     tech: ["React Native", "Expo", "Zustand", "Expo Router", "Gifted Charts"],
-    github: "https://github.com/JustworkedByOj/trae",
+    github: "https://github.com/Ojworks/Trae",
     live: "",
     metrics: ["Rotation & Attendance Tracking", "60% Duty Logging Reduction"],
   },
@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     description:
       "A serverless, local-first document utility studio enabling secure client-side format conversions, editing, and background removal processing without server latency.",
     tech: ["React", "TypeScript", "WebAssembly", "Cloudflare Workers"],
-    github: "https://github.com/JustworkedByOj/omni",
+    github: "https://github.com/Ojworks/Omni",
     live: "",
     metrics: ["100% Client-Side Privacy", "4x Faster Document Renderings"],
   },
