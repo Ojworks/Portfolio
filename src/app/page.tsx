@@ -103,7 +103,7 @@ export default function Home() {
             {/* Sub-headline */}
             <div className="pt-0.5">
               <p className="text-sm font-serif italic text-[#8c7a6b] dark:text-[#c29b68]">
-                Software Developer & Chief Operating Officer
+                Front-End Engineer & Chief Operating Officer
               </p>
             </div>
 
