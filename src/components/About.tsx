@@ -14,13 +14,13 @@ export function AboutCard() {
         </div>
         <div className="space-y-3.5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-sans">
           <p className="font-medium text-stone-900 dark:text-stone-100">
-            I am a Software Developer and Chief Operating Officer specializing in building cross-platform web and mobile applications using React, React Native, and Flutter. Always eager for growth and continuous learning, I focus on mastering modern workflows and expanding my technical expertise.
+            I am a Software Developer and Chief Operating Officer specializing in building cross-platform web and mobile applications using React, React Native, and Flutter. Passionate about continuous growth and learning, I focus on mastering modern development workflows and expanding my technical expertise.
           </p>
           <p>
-            As COO at SWUdevs, I coordinate operations and technical workflows for a community of over 150 members, designing curriculum-based workshops focused on university courses, hackathon prep, and developer tools. I manage outreach to bridge the gap between academic theory and real-world production.
+            As COO at SWUdevs, I coordinate operations and technical initiatives for a community of over 150 members. I help facilitate curriculum-based workshops focused on university courses, hackathon preparation, and developer tools, while leading outreach efforts that bridge academic theory with real-world software production.
           </p>
-          <p className="border-l border-stone-300 dark:border-stone-700 pl-3 italic text-stone-500 dark:text-stone-400">
-            {"Lately, I've been diving into the practical applications of artificial intelligence, exploring how to build intelligent features directly into web and mobile platforms. My focus is on making apps smarter and more efficient, whether by integrating large language models to streamline workflows or building more interactive user experiences."}
+          <p className="italic text-stone-500 dark:text-stone-400">
+            Recently, I have been exploring the practical applications of artificial intelligence, particularly agentic workflows and automation, to create smarter and more efficient development pipelines. My interests lie at the intersection of software engineering and AI, from integrating large language models to streamline workflows to building more adaptive and interactive user experiences.
           </p>
         </div>
       </div>

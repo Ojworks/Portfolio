@@ -14,7 +14,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     period: "2026 – Present",
     bullets: [
       "Coordinating operations and workflows across technology, creatives, programs, marketing, and finance for a 150+ member community.",
-      "Designing curriculum-based workshops focused on university courses, hackathon preparation, and developer tools.",
+      "Facilitating curriculum-based workshops focused on university courses, hackathon preparation, and developer tools.",
     ],
   },
   {
@@ -23,7 +23,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     period: "2025 – Present",
     bullets: [
       "Independently designed and architected digital systems focused on student productivity and workflows.",
-      "Created Trae (a cross-platform student duty hour tracker) and OMNI (a local-first serverless document studio) to simplify student tasks.",
+      "Created Trae, a cross-platform duty hour tracker, to simplify duty hour tracking for students and interns.",
     ],
   },
   {
@@ -31,7 +31,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     company: "Southwestern University PHINMA",
     period: "2024",
     bullets: [
-      "Began coding journey, mastering core computational logic, basic syntax, and learning frontend concepts.",
+      "Began coding journey, mastering core computational logic, basic syntax, and learning backend concepts.",
     ],
   },
 ];

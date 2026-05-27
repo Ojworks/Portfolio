@@ -16,23 +16,13 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     title: "Trae",
-    category: "Mobile App / State Architecture",
+    category: "Mobile App / Productivity",
     description:
-      "A cross-platform mobile application designed for medical and academic students to track duty sessions, clinical rotations, and attendance hours efficiently.",
-    tech: ["React Native", "Expo", "Zustand", "Expo Router", "Gifted Charts"],
+      "A cross-platform duty hour tracker for students and interns to log time against a monthly goal. Features a live timer, manual entry, per-day calendar logging with notes, multi-session support, a 7-day analytics chart, and smart daily/weekly catch-up guidance.",
+    tech: ["React Native", "Expo", "Zustand", "Expo Router", "NativeWind", "Gifted Charts"],
     github: "https://github.com/Ojworks/Trae",
     live: "",
-    metrics: ["Rotation & Attendance Tracking", "60% Duty Logging Reduction"],
-  },
-  {
-    title: "OMNI",
-    category: "Local-First Document Studio",
-    description:
-      "A serverless, local-first document utility studio enabling secure client-side format conversions, editing, and background removal processing without server latency.",
-    tech: ["React", "TypeScript", "WebAssembly", "Cloudflare Workers"],
-    github: "https://github.com/Ojworks/Omni",
-    live: "",
-    metrics: ["100% Client-Side Privacy", "4x Faster Document Renderings"],
+    metrics: ["Multi-Session & Monthly Archive", "Live Timer + Manual Logging"],
   },
 ];
 

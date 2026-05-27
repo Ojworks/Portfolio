@@ -62,7 +62,7 @@ export default function Home() {
           {/* Profile Photo */}
           <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-xl overflow-hidden border border-stone-200 dark:border-stone-800 bg-transparent flex-shrink-0 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
             <Image
-              src="/profile.jpg"
+              src="/profile.webp"
               alt="Orlando Fornolles Jr."
               fill
               priority
