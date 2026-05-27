@@ -14,7 +14,7 @@ export function AboutCard() {
         </div>
         <div className="space-y-3.5 text-sm text-stone-600 dark:text-stone-300 leading-relaxed font-sans">
           <p className="font-medium text-stone-900 dark:text-stone-100">
-            I am a Software Developer and Chief Operating Officer specializing in building cross-platform web and mobile applications using React, React Native, and Flutter. Passionate about continuous growth and learning, I focus on mastering modern development workflows and expanding my technical expertise.
+            I am a Front-End Engineer and Chief Operating Officer specializing in building cross-platform web and mobile applications using React, React Native, and Flutter. Passionate about continuous growth and learning, I focus on mastering modern development workflows and expanding my technical expertise.
           </p>
           <p>
             As COO at SWUdevs, I coordinate operations and technical initiatives for a community of over 150 members. I help facilitate curriculum-based workshops focused on university courses, hackathon preparation, and developer tools, while leading outreach efforts that bridge academic theory with real-world software production.
