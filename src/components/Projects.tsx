@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
       "A premium, browser-native document workspace that runs 100% locally on your device. Allows users to privately convert batches of images into PDF documents and extract structured text or formatted Markdown from PDFs.",
     tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "jsPDF", "PDF.js"],
     github: "https://github.com/Ojworks/Filo",
-    live: "https://filo.works",
+    live: "https://filo-5iot.onrender.com/",
     metrics: ["100% Client-Side Processing", "Zero-Server PDF & Image Conversion"],
   },
   {
