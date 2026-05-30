@@ -47,7 +47,7 @@ export default function Certifications() {
     <div className="bento-card">
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] transition-colors duration-300" />
           <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
             Certifications
           </h2>
@@ -64,7 +64,7 @@ export default function Certifications() {
               }`}
             >
               <div className="flex gap-2.5">
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-transparent border border-stone-200 dark:border-stone-800 text-stone-400 dark:text-stone-500 group-hover/item:text-stone-800 dark:group-hover/item:text-stone-200 transition-colors">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-transparent border border-stone-200 dark:border-stone-800 text-stone-400 dark:text-stone-500 group-hover/item:text-[var(--accent)] dark:group-hover/item:text-[var(--accent)] transition-colors duration-300">
                   <Award className="h-4 w-4" />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function Certifications() {
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-stone-400 hover:text-stone-800 dark:text-stone-500 dark:hover:text-stone-200 transition-colors flex-shrink-0 mt-0.5"
+                  className="text-stone-400 hover:text-[var(--accent)] dark:text-stone-500 dark:hover:text-[var(--accent)] transition-colors flex-shrink-0 mt-0.5"
                   title="Verify Certification"
                 >
                   <ArrowUpRight className="h-3 w-3" />

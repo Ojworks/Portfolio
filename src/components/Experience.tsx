@@ -23,6 +23,7 @@ const EXPERIENCE_ITEMS: ExperienceItem[] = [
     period: "2025 – Present",
     bullets: [
       "Independently designed and architected digital systems focused on student productivity and workflows.",
+      "Created Filo, a private client-side document workspace, utilizing local browser compilers for high-performance content extraction.",
       "Created Trae, a cross-platform duty hour tracker, to simplify duty hour tracking for students and interns.",
     ],
   },
@@ -41,7 +42,7 @@ export function ExperienceCard() {
     <div className="bento-card flex flex-col justify-between h-full">
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] transition-colors duration-300" />
           <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
             Experience
           </h2>
@@ -51,7 +52,7 @@ export function ExperienceCard() {
           {EXPERIENCE_ITEMS.map((item, idx) => (
             <div key={idx} className="relative">
               {/* Dot */}
-              <div className="absolute -left-[21px] top-1.5 h-2 w-2 rounded-full bg-stone-900 dark:bg-stone-100 border border-stone-200 dark:border-stone-800" />
+              <div className="absolute -left-[21px] top-1.5 h-2 w-2 rounded-full bg-[var(--accent)] border border-stone-200 dark:border-stone-800 transition-colors duration-300" />
               
               <div className="space-y-0.5">
                 <div className="flex items-center justify-between gap-2">

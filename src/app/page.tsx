@@ -25,14 +25,14 @@ export default function Home() {
 
   if (!mounted) {
     return (
-      <div className="min-h-screen bg-[#fafaf9] dark:bg-[#0c0a09] transition-colors duration-500" />
+      <div className="min-h-screen bg-[var(--background)] transition-colors duration-500" />
     );
   }
 
   const currentTheme = theme === "system" ? resolvedTheme : theme;
 
   return (
-    <div className="min-h-screen bg-[#fafaf9] dark:bg-[#0c0a09] text-stone-900 dark:text-stone-100 transition-colors duration-500">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500">
       <main className="max-w-4xl mx-auto px-4 py-8 md:py-16 flex flex-col gap-6 relative">
         
         {/* Floating Theme Toggle (Top Right) */}
@@ -84,7 +84,7 @@ export default function Home() {
               <svg
                 viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4.5 w-4.5 text-blue-500 flex-shrink-0"
+                className="h-4.5 w-4.5 text-[var(--accent)] flex-shrink-0 transition-colors duration-300"
                 aria-label="Verified user"
               >
                 <path
@@ -102,7 +102,7 @@ export default function Home() {
 
             {/* Sub-headline */}
             <div className="pt-0.5">
-              <p className="text-sm font-serif italic text-[#8c7a6b] dark:text-[#c29b68]">
+              <p className="text-sm font-serif italic text-[var(--accent)] font-semibold transition-colors duration-300">
                 Front-End Engineer & Chief Operating Officer
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 href="https://calendar.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-8 items-center rounded-lg bg-stone-900 hover:bg-stone-800 dark:bg-stone-100 dark:hover:bg-stone-200 px-3.5 text-xs font-semibold text-stone-100 dark:text-stone-900 transition-colors gap-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
+                className="inline-flex h-8 items-center rounded-lg bg-[var(--accent)] hover:bg-[var(--accent-hover)] px-3.5 text-xs font-semibold text-white dark:text-stone-950 transition-all duration-300 gap-1.5 shadow-[0_1px_2px_rgba(0,0,0,0.05)] cursor-pointer"
               >
                 <Calendar className="h-3.5 w-3.5" />
                 <span>Schedule a Meeting</span>

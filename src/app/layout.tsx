@@ -33,7 +33,7 @@ export default function RootLayout({
       className={`${inter.variable} ${newsreader.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500 selection:bg-[var(--accent)] selection:text-white">
+      <body className="min-h-full bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

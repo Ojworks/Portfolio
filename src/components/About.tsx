@@ -7,7 +7,7 @@ export function AboutCard() {
     <div className="bento-card flex flex-col justify-between h-full">
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] transition-colors duration-300" />
           <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
             About
           </h2>
@@ -57,7 +57,7 @@ export function TechStackCard() {
       <div>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-stone-100" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] transition-colors duration-300" />
             <h2 className="text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400">
               Tech Stack
             </h2>
